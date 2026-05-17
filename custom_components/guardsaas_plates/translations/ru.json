@@ -1,0 +1,58 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "GuardSaaS Plates",
+        "description": "Введите данные доступа GuardSaaS.",
+        "data": {
+          "username": "Логин",
+          "password": "Пароль",
+          "mandatory_plates": "Обязательные номера через запятую",
+          "update_interval_hours": "Интервал обновления, часов",
+          "cache_file": "Файл кеша"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось авторизоваться или получить данные GuardSaaS. Проверьте логин и пароль."
+    },
+    "abort": {
+      "already_configured": "Этот аккаунт уже настроен."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "GuardSaaS Plates — настройки",
+        "data": {
+          "mandatory_plates": "Обязательные номера через запятую",
+          "update_interval_hours": "Интервал обновления, часов",
+          "cache_file": "Файл кеша"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "allowed_plates": {
+        "name": "Разрешённые номера"
+      },
+      "plates_count": {
+        "name": "Количество номеров"
+      },
+      "last_update": {
+        "name": "Последнее обновление"
+      }
+    },
+    "binary_sensor": {
+      "auth_status": {
+        "name": "Авторизация"
+      }
+    },
+    "button": {
+      "refresh_plates": {
+        "name": "Обновить номера"
+      }
+    }
+  }
+}
