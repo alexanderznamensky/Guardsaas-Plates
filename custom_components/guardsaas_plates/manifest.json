@@ -4,9 +4,9 @@
   "codeowners": ["@alexanderznamensky"],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/alexanderznamensky/Guardsaas-Plates",
-  "issue_tracker": "https://github.com/alexanderznamensky/Guardsaas-Plates/issues",
+  "documentation": "https://github.com/alexanderznamensky/guardsaas_plates",
+  "issue_tracker": "https://github.com/alexanderznamensky/guardsaas_plates/issues",
   "iot_class": "cloud_polling",
   "requirements": ["beautifulsoup4==4.12.3"],
-  "version": "0.1.6"
+  "version": "0.1.7"
 }

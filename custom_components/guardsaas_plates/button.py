@@ -29,6 +29,7 @@ class GuardSaaSRefreshButton(GuardSaaSPlatesEntity, ButtonEntity):
     _attr_translation_key = "refresh_plates"
     _attr_icon = "mdi:update"
     _attr_entity_category = EntityCategory.CONFIG
+    _attr_suggested_object_id = "guardsaas_plates_refresh_plates"
 
     def __init__(self, coordinator: GuardSaaSPlatesCoordinator) -> None:
         """Initialize button."""

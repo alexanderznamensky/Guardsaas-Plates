@@ -297,9 +297,9 @@ class GuardSaaSClient:
         count = int(plates_data.get("count", 0) or 0)
         status = clean_text(plates_data.get("status", "unknown"))
         timestamp = clean_text(plates_data.get("timestamp", now_iso()))
-        state = "No allowed plates" if count == 0 else "Plates successfully loaded"
+        state = "Нет разрешённых номеров" if count == 0 else "Номера успешно загружены"
         if error and not plates_dict:
-            state = "Error occurred"
+            state = "Ошибка загрузки"
 
         result = GuardSaaSResult(
             content=clean_text(" ".join([f"- {plate}" for plate in plates_dict.keys()])),

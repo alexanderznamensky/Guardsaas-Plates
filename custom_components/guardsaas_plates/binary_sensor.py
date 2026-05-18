@@ -34,6 +34,7 @@ class GuardSaaSAuthBinarySensor(GuardSaaSPlatesEntity, BinarySensorEntity):
         """Initialize binary sensor."""
         super().__init__(coordinator)
         self._attr_unique_id = f"{coordinator.entry.entry_id}_auth_status"
+        self._attr_suggested_object_id = "guardsaas_plates_auth_status"
 
     @property
     def is_on(self) -> bool:
