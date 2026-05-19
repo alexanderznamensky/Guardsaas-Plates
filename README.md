@@ -1,6 +1,6 @@
 # GuardSaaS Plates для Home Assistant
 
-Минимальная custom integration для получения разрешённых автомобильных номеров из GuardSaaS.
+Минимальная custom integration для получения авторизованных автомобильных номеров из GuardSaaS.
 
 ## Установка
 
